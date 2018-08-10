@@ -9,9 +9,6 @@
     "install": "npm run compile-server && npm run compile-client",
     "start": "node server/lib/index.js"
   },
-  "engines": {
-    "node": "8.7.0"
-  },
   "repository": {
     "url": "git@github.com:endel/babylonjs-multiplayer-boilerplate.git",
     "type": "git"

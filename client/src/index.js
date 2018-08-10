@@ -1,14 +1,8 @@
 import "./index.css";
 
 import * as BABYLON from "babylonjs";
-import { room } from "./game/network";
 
-// Listen to patches comming
-room.onStateChange.add(function(patches) {
-    console.log("Server state changed: ", patches);
-});
-
-const canvas = document.getElementById('game') as HTMLCanvasElement;
+const canvas = document.getElementById("game");
 const engine = new BABYLON.Engine(canvas, true);
 
 // This creates a basic Babylon Scene object (non-mesh)
