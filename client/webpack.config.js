@@ -15,7 +15,7 @@ module.exports = function(options) {
     mode: MODE,
 
     entry: {
-      main: path.resolve('src/index.ts')
+      main: path.resolve('src/index.js')
     },
 
     output: {
@@ -27,6 +27,7 @@ module.exports = function(options) {
 
     module: {
       rules: [
+        { test: /\.js$/, loader: "babel-loader" },
         { test: /\.ts$/, loader: "ts-loader" },
         { test: /\.css$/, loader: ExtractTextPlugin.extract({ fallback: "style-loader", use: "css-loader" }) },
         { test: /\.(woff|woff2|eot|ttf|svg)$/, loader: 'file-loader?limit=1024&name=[name].[ext]' },
