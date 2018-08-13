@@ -2,6 +2,12 @@
 # yarn lockfile v1
 
 
+"@fae/ecs@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@fae/ecs/-/ecs-1.0.2.tgz#d4749727fb97ca75c441378313064c6bcae3d905"
+  dependencies:
+    core-js "^2.4.1"
+
 "@gamestdio/clock@^1.1.0":
   version "1.1.9"
   resolved "https://registry.yarnpkg.com/@gamestdio/clock/-/clock-1.1.9.tgz#77ec0c011391fbbfdcb4f32112429536fd8680cb"
@@ -995,7 +1001,7 @@ babylon@^7.0.0-beta.47:
   version "7.0.0-beta.47"
   resolved "https://registry.yarnpkg.com/babylon/-/babylon-7.0.0-beta.47.tgz#6d1fa44f0abec41ab7c780481e62fd9aafbdea80"
 
-babylonjs@^3.2.0-beta.4:
+babylonjs@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/babylonjs/-/babylonjs-3.2.0.tgz#14cb71f27adaae1b071a03bd0d292b0fe07e448e"
 
@@ -1546,7 +1552,7 @@ colors@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/colors/-/colors-1.1.2.tgz#168a4701756b6a7f51a12ce0c97bfa28c084ed63"
 
-colyseus.js@^0.9.1:
+colyseus.js@^0.9.13:
   version "0.9.13"
   resolved "https://registry.yarnpkg.com/colyseus.js/-/colyseus.js-0.9.13.tgz#723669ae9740fe246f684be904be17f5d413e1f9"
   dependencies:
