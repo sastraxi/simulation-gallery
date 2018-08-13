@@ -1,9 +1,10 @@
-const webpack = require('webpack')
-const path = require('path')
+const webpack = require('webpack');
+const path = require('path');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
+// eslint-disable-next-line
 module.exports = function(options) {
   if (!options) options = {};
 
@@ -45,8 +46,12 @@ module.exports = function(options) {
     performance: { hints: false },
 
     resolve: {
-      extensions: ['.ts', '.js', '.json']
-    }
+      extensions: ['.ts', '.js', '.json'],
+      modules: [
+        path.resolve(__dirname, './src'),
+        'node_modules',
+      ],
+    },
 
-  }
+  };
 };
